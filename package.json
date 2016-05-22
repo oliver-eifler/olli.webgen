@@ -1,0 +1,31 @@
+{
+  "name": "olli.webgen",
+  "version": "0.0.1",
+  "description": "a static site generator for olli.web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliver-eifler/olli.webgen.git"
+  },
+  "keywords": [
+    "node",
+    "olli",
+    "static",
+    "site",
+    "generator"
+  ],
+  "author": "Oliver Jean Eifler <olli.eifler@gmail.com> (http://www.oliver-eifler.info)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliver-eifler/olli.webgen/issues"
+  },
+  "homepage": "https://github.com/oliver-eifler/olli.webgen#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "image-size": "^0.5.0",
+    "lodash": "^4.12.0"
+  }
+}
