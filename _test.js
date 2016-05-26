@@ -3,6 +3,7 @@
  */
 var plugin = "./index.js";
 var webgen = require(plugin);
-var doc = new webgen("test/test.olli.html",{cheerio:{decodeEntities:false}});
+var doc = new webgen("test/test.olli.html",{cheerio:{decodeEntities:false},
+    plugins:{"minify":{},"image":{imagePath:"test/",forceFrame:true}}});
 doc.process();
-console.log(doc.toString());
+doc.save("test/final.html");
