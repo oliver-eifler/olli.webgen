@@ -1,17 +1,11 @@
 ---
+template: test/article.html
 title: Oliver Jean Eifler
-date: heute
+subtitle: Programmierer. Techniker. Künstler.
+description: >
+  Um was geht's hier eigentlich bla bla
+  hallo
 ---
-<div class="content-container baseline">
-    <div class="hero-container bumper">
-        <div class="hero">
-            <h1 class="text-smart"><span><%= data.title %></span></h1>
-            <h3 class="text-smart hug"><span>Programmierer. Techniker. Künstler.</span></h3>
-            <p>Um was geht's eigentlich</p>
-            <p><small><%= data.timestamp() %> <%= moment(data.modified).format("LLL") %></small></p>
-        </div>
-    </div>
-    <div class="content content-width">
         <olli-img class="center" data-reflow frame src="images/welpe.jpg">Picture: a nice pic of my dog</olli-img>
         <p><i data-icon-embed class='icon-invader'></i> Erinnerungen, <a href='#'>Prophezeiungen</a>,
             Fantasiegespinste und <a href='#'>Liebe</a>, Vergangenheit, Zukunft und der Augenblick des Traums
@@ -37,9 +31,7 @@ date: heute
             Living one immortal day.
         </p>
         <p>To know that is Wisdom. To use it is the Art.</p>
-        <olli-img class="center" data-reflow frame src="http://lorempixel.com/320/250/?v={= rand(1, 99) }" width="320" height="250"></olli-img>
-        <olli-img class="center" data-reflow frame src="http://lorempixel.com/640/480/?v={= rand(1, 99) }" width="640" height="480"></olli-img>
-        <olli-img class="center" data-reflow frame src="http://lorempixel.com/640/480/?v={= rand(1, 99) }" width="640" height="480"></olli-img>
-        <olli-img class="center" data-reflow frame src="http://lorempixel.com/320/480/?v={= rand(1, 99) }" width="320" height="480"></olli-img>
-    </div>
-</div>
+        <olli-img class="center" data-reflow frame src="http://lorempixel.com/320/250/?v=<?= rand(1, 99) ?>" width="320" height="250"></olli-img>
+        <olli-img class="center" data-reflow frame src="http://lorempixel.com/640/480/?v=<?= rand(1, 99) ?>" width="640" height="480"></olli-img>
+        <olli-img class="center" data-reflow frame src="http://lorempixel.com/640/480/?v=<?= rand(1, 99) ?>" width="640" height="480"></olli-img>
+        <olli-img class="center" data-reflow frame src="http://lorempixel.com/320/480/?v=<?= rand(1, 99) ?>" width="320" height="480"></olli-img>

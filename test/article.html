@@ -1,0 +1,16 @@
+---
+type: template
+---
+<div class="content-container baseline">
+    <div class="hero-container bumper">
+        <div class="hero">
+            <h1 class="text-smart"><span><%= data.title %></span></h1>
+            <h3 class="text-smart hug"><span><%= data.subtitle %></span></h3>
+            <p><%= data.description %></p>
+            <p><small><%= data.timestamp() %> <%= moment(data.modified).format("LLL") %></small></p>
+        </div>
+    </div>
+    <div class="content content-width">
+        <%= content %>
+    </div>
+</div>
